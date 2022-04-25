@@ -1,0 +1,22 @@
+.work {
+
+    &__container {
+        max-width: 1510px;
+        margin: 0 auto;
+    }
+
+    &__body {
+        height: 678px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 25% 25% 25% 25% ;
+        margin-bottom: 114px;
+    }
+
+    &__img {
+        cursor: pointer;
+    }
+    &__img:hover {
+        background: linear-gradient(rgba(255, 67, 67, 0.8),rgba(255, 67, 67, 0.8));
+    }
+}

@@ -1,0 +1,387 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700,800,900&display=swap";
+.about__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about__content {
+  height: 717px;
+  flex-wrap: wrap;
+  margin: 116px 0;
+  display: flex;
+}
+
+.about__img {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 29px;
+  display: block;
+}
+
+.about__title {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 22px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.about__text {
+  text-align: center;
+  color: #6c7279;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.content__column {
+  flex: 0 0 33.3333%;
+}
+
+.work__body {
+  width: 1510px;
+  height: 678px;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 0 auto 114px;
+  display: grid;
+}
+
+.work__img {
+  cursor: pointer;
+}
+
+.work__img:hover {
+  background: linear-gradient(#ff4343cc, #ff4343cc);
+}
+
+.workers__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.workers__body {
+  height: 619px;
+  justify-content: space-between;
+  margin-bottom: 114px;
+  display: flex;
+}
+
+.workers__avatar {
+  margin-bottom: 30px;
+}
+
+.workers__title {
+  text-align: left;
+  margin-bottom: 5px;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.workers__subtitle {
+  text-align: left;
+  color: #ff4343;
+  margin-bottom: 18px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.workers__text {
+  text-align: left;
+  color: #6c7279;
+  margin-bottom: 38px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.workers__icon {
+  width: 39px;
+  height: 39px;
+  margin-right: 6px;
+}
+
+
+
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+:focus, :active, a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  line-height: 1;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.download__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.download__body {
+  height: 224px;
+  margin: 114px auto;
+}
+
+.download__title {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 17.5px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35px;
+}
+
+.download__subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.download__button {
+  width: 369px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #ff4343;
+  margin: 0 auto;
+  padding: 25px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  display: block;
+}
+
+.download__button:hover {
+  background: #e71414;
+}
+
+.download__button:active {
+  background: #ff4343;
+  box-shadow: 4px 4px 30px #ff4343;
+}
+
+.footer__container {
+  width: 100%;
+  background: #353c65;
+}
+
+.footer__body {
+  max-width: 1170px;
+  height: 250px;
+  color: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+
+.footer__column {
+  flex: 0 0 33.3333%;
+  margin-top: 71.55px;
+}
+
+.footer__title {
+  text-align: center;
+  margin-bottom: 29px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.footer__subtitle {
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer__icons {
+  text-align: center;
+  display: block;
+}
+
+.footer__icon {
+  width: 39px;
+  height: 39px;
+  margin: 20px 27px 0 0;
+}
+
+.footer__section {
+  width: 100%;
+  height: 90px;
+  background: #2c3154;
+  padding-top: 24px;
+}
+
+.footer__text {
+  text-align: center;
+  color: #c6cbcd;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.colortext {
+  color: #fff;
+}
+
+.header__container {
+  width: 100%;
+  height: 747px;
+  background: url("banner.9705f5ed.png") center / cover no-repeat;
+}
+
+.header__menu {
+  max-width: 1170px;
+  height: 101px;
+  border-bottom: 1px solid #babbc5;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+}
+
+.header__banner {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__title {
+  text-align: center;
+  color: #fff;
+  margin-top: 130px;
+  font-family: Raleway, sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 75px;
+}
+
+.header__subtitle {
+  text-align: center;
+  color: #fff;
+  margin-top: 31px;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.header__button {
+  width: 369px;
+  text-align: center;
+  color: #fff;
+  background: #ff4343;
+  margin: 82px auto 0;
+  padding: 26px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  display: block;
+}
+
+.header__button:hover {
+  background: #e71414;
+}
+
+.header__button:active {
+  background: #ff4343;
+  box-shadow: 4px 4px 30px #ff4343;
+}
+
+.menu__burger {
+  display: none;
+}
+
+.menu__list {
+  width: 670px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.menu__link {
+  text-align: center;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.menu__link:hover {
+  border-bottom: 3px solid #babbc5;
+}
+
+.menu__link:active {
+  border-bottom: 3px solid #e71414;
+}
+
+/*# sourceMappingURL=index.c4c8f604.css.map */
