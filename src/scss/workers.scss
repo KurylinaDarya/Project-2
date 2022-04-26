@@ -10,13 +10,15 @@
         height: 619px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 114px;
+        margin: 114px auto;
     }
 
     &__column {
+        flex: 0 0 calc((100% - 90px) / 4);
     }
 
     &__avatar {
+        width: 100%;
         margin-bottom: 30px;
     }
 
@@ -45,6 +47,7 @@
         text-align: left;
         color: #6C7279;
         margin-bottom: 38px;
+        margin-right: 20px;
     }
 
     &__icon {

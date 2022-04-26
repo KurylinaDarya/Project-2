@@ -6,3 +6,4 @@ import './scss/reset.scss';
 import './scss/download.scss';
 import './scss/footer.scss';
 import './scss/header.scss';
+import './scss/media.scss';
