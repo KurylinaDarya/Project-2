@@ -66,6 +66,9 @@
     }
 }
 .menu {
+    &__logo {
+       width: 270px;     
+    }
 
     &__burger {
         display: none;

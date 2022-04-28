@@ -6,10 +6,12 @@
         }
     
         &__menu {
+            max-width: 1024px;
             padding: 0 20px;
         }
     
         &__banner {
+            max-width: 1024px;
             padding: 0 20px;
         }
     
@@ -32,6 +34,11 @@
         }
     }
     .menu {
+
+        &__logo {
+            width: 230px;     
+        }
+
         &__list {
             width: 566px;
         }
@@ -252,6 +259,11 @@
         }
     }
     .menu {
+
+        &__logo {
+            width: 130px;     
+        }
+
         &__button-container{
             display: flex;
         }
@@ -293,11 +305,6 @@
             line-height: 15px;
             padding: 24px 0;
         }
-        /*&__link:hover::after {
-            width: 119px;
-        }
-        &__link:active::after {
-            width: 119px;
-        }*/
+        
     }
 }
