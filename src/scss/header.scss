@@ -67,16 +67,49 @@
 }
 .menu {
 
-    &__logo {
-    }
-
     &__burger {
         display: none;
     }
 
-    &__body {
+    &__button-container{
+        display: none;
+        height: 100%;
+        width: 24px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
+    &__button,
+    &__button::before,
+    &__button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 3px;
+        width: 24px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+    }
+    &__button::before {
+        content: '';
+        margin-top: -8px;
+    }
+    &__button::after {
+        content: '';
+        margin-top: 8px;
+    }
+    
+    #menu__burger:checked + .menu__button-container .menu__button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+    }
+    #menu__burger:checked + .menu__button-container .menu__button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+    }
+   
     &__list {
         width: 670px;
         display: flex;
@@ -105,7 +138,7 @@
     }
     &__link:active::after {
         position: absolute;
-        width: 119px;
+        width: 134px;
         left: 0;
         right: 0;
         bottom: -36px;

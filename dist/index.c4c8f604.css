@@ -373,6 +373,46 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.menu__button-container {
+  height: 100%;
+  width: 24px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu__button, .menu__button:before, .menu__button:after {
+  height: 3px;
+  width: 24px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: transform .4s cubic-bezier(.23, 1, .32, 1);
+  display: block;
+  position: absolute;
+}
+
+.menu__button:before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu__button:after {
+  content: "";
+  margin-top: 8px;
+}
+
+.menu #menu__burger:checked + .menu__button-container .menu__button:before {
+  margin-top: 0;
+  transform: rotate(405deg);
+}
+
+.menu #menu__burger:checked + .menu__button-container .menu__button:after {
+  margin-top: 0;
+  transform: rotate(-405deg);
+}
+
 .menu__list {
   width: 670px;
   justify-content: space-around;
@@ -402,7 +442,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu__link:active:after {
-  width: 119px;
+  width: 134px;
   height: 3px;
   background-color: #e71414;
   position: absolute;
@@ -411,11 +451,48 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
-
-
 @media (max-width: 1024px) {
+  .header__container {
+    height: 768px;
+  }
+
+  .header__menu, .header__banner {
+    padding: 0 20px;
+  }
+
+  .header__title {
+    margin-top: 158px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .header__subtitle {
+    margin-top: 62px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .header__button {
+    width: 313px;
+    margin: 91.5px auto 0;
+    padding: 24.7px 0;
+  }
+
+  .menu__list {
+    width: 566px;
+  }
+
+  .menu__link {
+    padding: 6.5px 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .menu__link:hover:after, .menu__link:active:after {
+    width: 119px;
+  }
+
   .about__container {
-    max-width: 1024px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -452,47 +529,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .content__column:nth-child(1), .content__column:nth-child(2), .content__column:nth-child(3) {
     margin-bottom: 50px;
-  }
-
-  .header__container {
-    height: 768px;
-  }
-
-  .header__menu, .header__banner {
-    max-width: 1024px;
-    padding: 0 20px;
-  }
-
-  .header__title {
-    margin-top: 158px;
-    font-size: 48px;
-    line-height: 56px;
-  }
-
-  .header__subtitle {
-    margin-top: 62px;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  .header__button {
-    width: 313px;
-    margin: 91.5px auto 0;
-    padding: 24.7px 0;
-  }
-
-  .menu__list {
-    width: 566px;
-  }
-
-  .menu__link {
-    padding: 6.5px 0;
-    font-size: 12px;
-    line-height: 14px;
-  }
-
-  .menu__link:hover:after, .menu__link:active:after {
-    width: 119px;
   }
 
   .work__container {
@@ -613,5 +649,99 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 16.44px;
   }
 }
+
+@media (max-width: 768px) {
+  .header__container {
+    height: 574px;
+  }
+
+  .header__menu {
+    height: 56px;
+  }
+
+  .header__title {
+    margin-top: 106px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .header__subtitle {
+    margin-top: 33px;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+
+  .header__button {
+    width: 279px;
+    margin: 51px auto 0;
+    padding: 15px 0;
+  }
+
+  .menu__button-container {
+    display: flex;
+  }
+
+  .menu__list {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .menu #menu__burger ~ .menu__list li {
+    height: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    transition: height .4s cubic-bezier(.23, 1, .32, 1);
+  }
+
+  .menu #menu__burger:checked ~ .menu__list li {
+    height: 2.5em;
+    border: 1px solid red;
+    padding: .5em;
+    transition: height .4s cubic-bezier(.23, 1, .32, 1);
+  }
+
+  .menu__list > li {
+    width: 100%;
+    justify-content: start;
+    margin-left: 20px;
+    display: flex;
+  }
+
+  .menu__link {
+    padding: 24px 0;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.swiper-container {
+  max-width: 1510px;
+  height: 535px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover;
+  display: block;
+}
+
+.swiper-pagination {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  bottom: 0;
+}
+
+
 
 /*# sourceMappingURL=index.c4c8f604.css.map */

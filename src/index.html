@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 		<script src="index.js" type="module"></script>
 		<title>Project-2</title>
 	</head>
@@ -11,18 +12,17 @@
         <section class="header__container">
 			<div class="header__menu">
 				<img class="menu__logo" src="img/logo.png">
-				<div class="menu__burger">
-					<span></span>
-				</div>
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li><a href="" class="menu__link">FEATURES</a></li>
-						<li><a href="" class="menu__link">WORKS</a></li>
-						<li><a href="" class="menu__link">OUR TEAM</a></li>
-						<li><a href="" class="menu__link">TESTIMONIALS</a></li>
-						<li><a href="" class="menu__link">DOWNLOAD</a></li>
-					</ul>
-				</nav>
+                <input id="menu__burger" type="checkbox" />
+                <label class='menu__button-container' for="menu__burger">
+                    <div class='menu__button'></div>
+                </label>
+                <ul class="menu__list">
+                    <li><a href="" class="menu__link">FEATURES</a></li>
+                    <li><a href="" class="menu__link">WORKS</a></li>
+                    <li><a href="" class="menu__link">OUR TEAM</a></li>
+                    <li><a href="" class="menu__link">TESTIMONIALS</a></li>
+                    <li><a href="" class="menu__link">DOWNLOAD</a></li>
+                </ul>
 			</div>
             <div class="header__banner">
                 <h1 class="header__title">YOUR FAVORITE ONE PAGE MULTI<br> PURPOSE TEMPLATE</h1>
@@ -116,6 +116,21 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/bg-1.png" class="slide-image" alt="#">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bg-1.png" class="slide-image" alt="#">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/bg-1.png" class="slide-image" alt="#">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <div class="download__container">
             <div class="download__body">
                 <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>

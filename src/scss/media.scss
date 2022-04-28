@@ -1,8 +1,56 @@
 @media (max-width: 1024px) {
+    .header {
+
+        &__container {
+            height: 768px;
+        }
+    
+        &__menu {
+            padding: 0 20px;
+        }
+    
+        &__banner {
+            padding: 0 20px;
+        }
+    
+        &__title {
+            font-size: 48px;
+            line-height: 56px;
+            margin-top: 158px;
+        }
+    
+        &__subtitle {
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 62px;
+        }
+    
+        &__button {
+            width: 313px;
+            padding: 24.7px 0;
+            margin: 91.5px auto 0 auto;
+        }
+    }
+    .menu {
+        &__list {
+            width: 566px;
+        }
+    
+        &__link {
+            font-size: 12px;
+            line-height: 14px;
+            padding: 6.5px 0;
+        }
+        &__link:hover::after {
+            width: 119px;
+        }
+        &__link:active::after {
+            width: 119px;
+        }
+    }
     .about {
 
         &__container {
-            max-width: 1024px;
             padding: 0 20px;
             margin: 0 auto;
         }
@@ -41,57 +89,6 @@
         &__column:nth-child(2),
         &__column:nth-child(3) {
             margin-bottom: 50px;
-        }
-    }
-    .header {
-
-        &__container {
-            height: 768px;
-        }
-    
-        &__menu {
-            max-width: 1024px;
-            padding: 0 20px;
-        }
-    
-        &__banner {
-            max-width: 1024px;
-            padding: 0 20px;
-        }
-    
-        &__title {
-            font-size: 48px;
-            line-height: 56px;
-            margin-top: 158px;
-        }
-    
-        &__subtitle {
-            font-size: 18px;
-            line-height: 21px;
-            margin-top: 62px;
-        }
-    
-        &__button {
-            width: 313px;
-            padding: 24.7px 0;
-            margin: 91.5px auto 0 auto;
-        }
-    }
-    .menu {
-        &__list {
-            width: 566px;
-        }
-    
-        &__link {
-            font-size: 12px;
-            line-height: 14px;
-            padding: 6.5px 0;
-        }
-        &__link:hover::after {
-            width: 119px;
-        }
-        &__link:active::after {
-            width: 119px;
         }
     }
     .work {
@@ -219,6 +216,88 @@
             font-size: 14px;
             line-height: 16.44px;
         }
-    }
+    } 
+}
+
+@media (max-width: 768px) {
+    .header {
+
+        &__container {
+            height: 574px;
+        }
     
+        &__menu {
+            height: 56px;
+        }
+    
+        &__banner {
+        }
+    
+        &__title {
+            font-size: 36px;
+            line-height: 42px;
+            margin-top: 106px;
+        }
+    
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16.44px;
+            margin-top: 33px;
+        }
+    
+        &__button {
+            width: 279px;
+            padding: 15px 0;
+            margin: 51px auto 0 auto;
+        }
+    }
+    .menu {
+        &__button-container{
+            display: flex;
+        }
+
+        &__list {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-top: 56px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #menu__burger ~ .menu__list li {
+            height: 0;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+        #menu__burger:checked ~ .menu__list li {
+            border: 1px solid red;
+            height: 2.5em;
+            padding: 0.5em;
+            transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        &__list > li {
+            display: flex;
+            justify-content: start;
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        &__link {
+            font-size: 13px;
+            line-height: 15px;
+            padding: 24px 0;
+        }
+        /*&__link:hover::after {
+            width: 119px;
+        }
+        &__link:active::after {
+            width: 119px;
+        }*/
+    }
 }

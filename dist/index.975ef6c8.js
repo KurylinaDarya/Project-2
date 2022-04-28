@@ -535,7 +535,14 @@ var _downloadScss = require("./scss/download.scss");
 var _footerScss = require("./scss/footer.scss");
 var _headerScss = require("./scss/header.scss");
 var _mediaScss = require("./scss/media.scss");
+var _slideScss = require("./scss/slide.scss");
+var swiper = new Swiper(".swiper-container", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+    }
+});
 
-},{"./scss/about.scss":"bFg6g","./scss/style.scss":"fZrcq","./scss/work.scss":"fHKOQ","./scss/workers.scss":"lBODx","./scss/reset.scss":"23439","./scss/download.scss":"48j0R","./scss/footer.scss":"idBsl","./scss/header.scss":"1AyFA","./scss/media.scss":"cpV6p"}],"bFg6g":[function() {},{}],"fZrcq":[function() {},{}],"fHKOQ":[function() {},{}],"lBODx":[function() {},{}],"23439":[function() {},{}],"48j0R":[function() {},{}],"idBsl":[function() {},{}],"1AyFA":[function() {},{}],"cpV6p":[function() {},{}]},["7fmqN","8lqZg"], "8lqZg", "parcelRequiree23a")
+},{"./scss/about.scss":"bFg6g","./scss/style.scss":"fZrcq","./scss/work.scss":"fHKOQ","./scss/workers.scss":"lBODx","./scss/reset.scss":"23439","./scss/download.scss":"48j0R","./scss/footer.scss":"idBsl","./scss/header.scss":"1AyFA","./scss/media.scss":"cpV6p","./scss/slide.scss":"6YN6W"}],"bFg6g":[function() {},{}],"fZrcq":[function() {},{}],"fHKOQ":[function() {},{}],"lBODx":[function() {},{}],"23439":[function() {},{}],"48j0R":[function() {},{}],"idBsl":[function() {},{}],"1AyFA":[function() {},{}],"cpV6p":[function() {},{}],"6YN6W":[function() {},{}]},["7fmqN","8lqZg"], "8lqZg", "parcelRequiree23a")
 
 //# sourceMappingURL=index.975ef6c8.js.map
