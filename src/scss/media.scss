@@ -109,6 +109,20 @@
             height: 460px;
         }
     }
+    .inner {
+
+        &__title {
+            font-size: 18px;
+            line-height: 21px;
+            padding: 10px 0;
+        }
+    
+        &__subtitle {
+            font-size: 14px;
+            line-height: 16.44px;
+            margin-top: 12px;
+        }
+    }
     .workers {
 
         &__container {
@@ -154,6 +168,21 @@
             margin-right: 5px;
         }
     }
+
+    .swiper{
+        max-width: 1024px;
+        height: 365px;
+    }
+   
+    .swiper-slide img{
+        height: 332px;
+    }
+   
+    .swiper-pagination-bullet{
+        width: 9.5px;
+        height: 9.5px;
+    }
+   
     .download {
 
         &__container {

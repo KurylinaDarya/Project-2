@@ -1,11 +1,12 @@
+
 .work {
 
     &__container {
-       width: 100%;
+        width: 100%;
         margin: 0 auto;
     }
 
-    &__body {
+    &__pictures {
         max-width: 1510px;
         margin: 0 auto;
         display: grid;
@@ -13,24 +14,57 @@
         grid-template-columns: 25% 25% 25% 25% ;
     }
 
-    &__img { 
+    &__img {
         cursor: pointer;
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+.picture {
+
+    &__item {
         position: relative;
     }
+}
+.item {
 
-    /*&__img:hover::after {
-        content: '';
+    &__inner {
+        width: 100%;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        background:  url('../img/Rectangle\ 17.png');
-        opacity: 0;
-    }*/
-  
+    }
+}
+.inner {
+
+    &__title {
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 28px;
+        padding: 16px 0;
+        color: #fff;
+    }
+
+    &__subtitle {
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 20px;
+        color: #fff;
+    }
+}
+
+img:hover~.item__inner{
+    display: flex;
+    background:rgba(255, 67, 67, 0.8);
+}
+img:active~.item__inner{
+    display: flex;
+    background: rgba(185, 12, 12, 0.8);
 }

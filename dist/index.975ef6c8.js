@@ -536,7 +536,7 @@ var _footerScss = require("./scss/footer.scss");
 var _headerScss = require("./scss/header.scss");
 var _mediaScss = require("./scss/media.scss");
 var _slideScss = require("./scss/slide.scss");
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true

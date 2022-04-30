@@ -50,7 +50,7 @@
   margin: 0 auto;
 }
 
-.work__body {
+.work__pictures {
   max-width: 1510px;
   grid-template-rows: 50% 50%;
   grid-template-columns: 25% 25% 25% 25%;
@@ -63,7 +63,48 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.picture__item {
   position: relative;
+}
+
+.item__inner {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  top: 0;
+}
+
+.inner__title {
+  color: #fff;
+  padding: 16px 0;
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+}
+
+.inner__subtitle {
+  color: #fff;
+  margin-top: 20px;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+img:hover ~ .item__inner {
+  background: #ff4343cc;
+  display: flex;
+}
+
+img:active ~ .item__inner {
+  background: #b90c0ccc;
+  display: flex;
 }
 
 .workers__container {
@@ -456,6 +497,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
+
+
 @media (max-width: 1024px) {
   .header__container {
     height: 768px;
@@ -550,6 +593,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 460px;
   }
 
+  .inner__title {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .inner__subtitle {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 16.44px;
+  }
+
   .workers__container {
     max-width: 1024px;
     padding: 0 20px;
@@ -591,6 +646,20 @@ h1, h2, h3, h4, h5, h6 {
     width: 32.8px;
     height: 32.8px;
     margin-right: 5px;
+  }
+
+  .swiper {
+    max-width: 1024px;
+    height: 365px;
+  }
+
+  .swiper-slide img {
+    height: 332px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 9.5px;
+    height: 9.5px;
   }
 
   .download__container {
@@ -735,27 +804,33 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.swiper-container {
+.swiper {
   max-width: 1510px;
   height: 535px;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 490px;
-  object-fit: cover;
-  display: block;
 }
 
 .swiper-pagination {
-  width: 14px;
-  height: 14px;
-  background-color: #fff;
   bottom: 0;
 }
 
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  opacity: 1;
+  background: #fff;
+  border: 1px solid #7e5d6f;
+}
 
+.swiper-pagination-bullet:hover {
+  background: #7e5d6f;
+}
 
 /*# sourceMappingURL=index.c4c8f604.css.map */

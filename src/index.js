@@ -9,7 +9,7 @@ import './scss/header.scss';
 import './scss/media.scss';
 import "./scss/slide.scss";
 
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
