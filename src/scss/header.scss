@@ -19,6 +19,10 @@
         justify-content: space-between;
     }
 
+    &__burger {
+        display: none;
+    }
+
     &__banner {
         max-width: 1170px;
         padding: 0 15px;
@@ -67,56 +71,17 @@
 }
 .menu {
     &__logo {
-       width: 270px;     
-    }
-
-    &__burger {
-        display: none;
-    }
-
-    &__button-container{
-        display: none;
-        height: 100%;
-        width: 24px;
-        cursor: pointer;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__button,
-    &__button::before,
-    &__button::after {
-        display: block;
-        background-color: #fff;
-        position: absolute;
-        height: 3px;
-        width: 24px;
-        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-        border-radius: 2px;
-    }
-    &__button::before {
-        content: '';
-        margin-top: -8px;
-    }
-    &__button::after {
-        content: '';
-        margin-top: 8px;
-    }
-    
-    #menu__burger:checked + .menu__button-container .menu__button::before {
-        margin-top: 0px;
-        transform: rotate(405deg);
-    }
-    #menu__burger:checked + .menu__button-container .menu__button::after {
-        margin-top: 0px;
-        transform: rotate(-405deg);
+       width: 270px; 
+       position: relative;  
+       z-index: 3;    
     }
    
     &__list {
         width: 670px;
         display: flex;
         justify-content: space-around;
+        position: relative;  
+        z-index: 2;
     }
 
     &__link {

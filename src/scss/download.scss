@@ -34,6 +34,7 @@
         display: block;
         width: 369px;
         margin: 0 auto;
+        padding: 25px 0;
         cursor: pointer;
         font-family: 'Raleway', sans-serif;
         font-size: 24px;
@@ -42,7 +43,6 @@
         text-align: center;
         color: #fff;
         background-color: #FF4343;
-        padding: 25px 0;
     }
     &__button:hover {
         background: #E71414;

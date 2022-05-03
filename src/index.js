@@ -9,9 +9,16 @@ import './scss/header.scss';
 import './scss/media.scss';
 import "./scss/slide.scss";
 
-var swiper = new Swiper(".swiper", {
+$(document).ready(function(){
+    $('.header__burger').click(function(event) {
+        $('.header__burger,.menu__list').toggleClass('active');
+    });
+});
+
+
+const swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
-  });
+});

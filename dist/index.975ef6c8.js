@@ -536,7 +536,12 @@ var _footerScss = require("./scss/footer.scss");
 var _headerScss = require("./scss/header.scss");
 var _mediaScss = require("./scss/media.scss");
 var _slideScss = require("./scss/slide.scss");
-var swiper = new Swiper(".swiper", {
+$(document).ready(function() {
+    $('.header__burger').click(function(event) {
+        $('.header__burger,.menu__list').toggleClass('active');
+    });
+});
+const swiper = new Swiper(".swiper", {
     pagination: {
         el: ".swiper-pagination",
         clickable: true
